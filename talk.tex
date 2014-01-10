@@ -115,32 +115,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-\frametitle{Reference Function Order Selection}
-\scriptsize
-\begin{center}
-\begin{tabular}{|l|r|} \hline
-Category             & Chosen Order \\ \hline \hline
-0,1-Jet Tight BB     & 5             \\ \hline
-0,1-Jet Tight BO     &  6            \\ \hline
-0,1-Jet Tight BE     &   6           \\ \hline
-0,1-Jet Tight OO     &  5          \\ \hline
-0,1-Jet Tight OE     &   5         \\ \hline
-0,1-Jet Tight EE     &    5        \\ \hline
-0,1-Jet Loose BB     &     5       \\ \hline
-0,1-Jet Loose BO     & 5      \\ \hline
-0,1-Jet Loose BE     &  5     \\ \hline
-0,1-Jet Loose OO     &   6    \\ \hline
-0,1-Jet Loose OE     &    5   \\ \hline
-0,1-Jet Loose EE     &     6  \\ \hline
-2-Jet VBF Tight      &  3            \\ \hline
-2-Jet GF Tight       &   5           \\ \hline
-2-Jet Loose          &   5           \\ \hline
-\end{tabular}
-\small
-\end{center}
-\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -203,7 +177,7 @@ Category             & Chosen Order \\ \hline \hline
     \item {\bf Search for Background Model with Negligible Bias w.r.t. All Reference Models}
     \begin{itemize}
       \item \textcolor{red}{Doesn't Need to be Reference Function}
-      \item Estimate Bias Using Fitted $N_{sig}$ Events in Toy Data
+      \item Estimate Bias Using Fitted $N_{sig}$ Events (or $\mu$) in Toy Data
 %      \item Bias $\leq 14\%$ of Stat Error is $H\rightarrow\gamma\gamma$ Goal
     \end{itemize}
   \end{itemize}
@@ -215,6 +189,263 @@ Category             & Chosen Order \\ \hline \hline
   \end{tabular}
 \end{center}
 \end{frame}
+
+\begin{frame}
+\frametitle{Reference Function Orders Selected}
+\vspace{-1em}
+\begin{columns}[c]
+ \column{60mm}
+    \begin{center}
+      \textbf{Sum of Exponential \\ Selected Orders }
+    \end{center}
+    \begin{itemize}
+      \item 2-Jet VBF Tight Very Near Threshold to Use 1st Order
+      \begin{itemize}
+        \item {\scriptsize (Prob: 3\%, Near 5\% Threshold)}
+        \item \tred{Decided to Use 1st Order for this Low-Stats Category}
+      \end{itemize}
+      \item All Other Categories 2nd Order
+    \end{itemize}
+ \column{60mm}
+    \begin{center}
+      \textbf{Bernstein Selected Orders}
+      \scriptsize
+      \begin{tabular}{|l|c|} \hline
+                             & Reference       \\
+        Category             & Bernstein Order \\ \hline \hline
+        0,1-Jet Tight BB     & 4       \\ \hline
+        0,1-Jet Tight BO     & 6       \\ \hline
+        0,1-Jet Tight BE     & 5       \\ \hline
+        0,1-Jet Tight OO     & 4       \\ \hline
+        0,1-Jet Tight OE     & 3       \\ \hline
+        0,1-Jet Tight EE     & 3       \\ \hline
+        0,1-Jet Loose BB     & 4       \\ \hline
+        0,1-Jet Loose BO     & 4       \\ \hline
+        0,1-Jet Loose BE     & 4       \\ \hline
+        0,1-Jet Loose OO     & 4       \\ \hline
+        0,1-Jet Loose OE     & 3       \\ \hline
+        0,1-Jet Loose EE     & 4       \\ \hline
+        2-Jet VBF Tight      & 2       \\ \hline
+        2-Jet GF Tight       & 3       \\ \hline
+        2-Jet Loose          & 4       \\ \hline
+      \end{tabular}
+    \small
+    \end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bernstein Orders Selected by Bias Study}
+\vspace{-1em}
+\begin{columns}[c]
+ \column{60mm}
+    \begin{itemize}
+      \item Reference Function Families:
+      \begin{itemize}
+        \item Bernstein
+        \item Sum of Exponentials
+      \end{itemize}
+      \item Bernstein
+      \item Sum of Exponential
+    \end{itemize}
+ \column{60mm}
+    \scriptsize
+    \begin{center}
+      \begin{tabular}{|l|c|} \hline
+        Category             & Bernstein Order \\ \hline \hline
+        0,1-Jet Tight BB     & 5             \\ \hline
+        0,1-Jet Tight BO     &  6            \\ \hline
+        0,1-Jet Tight BE     &   6           \\ \hline
+        0,1-Jet Tight OO     &  5          \\ \hline
+        0,1-Jet Tight OE     &   5         \\ \hline
+        0,1-Jet Tight EE     &    5        \\ \hline
+        0,1-Jet Loose BB     &     5       \\ \hline
+        0,1-Jet Loose BO     & 5      \\ \hline
+        0,1-Jet Loose BE     &  5     \\ \hline
+        0,1-Jet Loose OO     &   6    \\ \hline
+        0,1-Jet Loose OE     &    5   \\ \hline
+        0,1-Jet Loose EE     &     6  \\ \hline
+        2-Jet VBF Tight      &  3            \\ \hline
+        2-Jet GF Tight       &   5           \\ \hline
+        2-Jet Loose          &   5           \\ \hline
+      \end{tabular}
+    \small
+    \end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Expected Limit Comparison $m_H=125\GeVcc{}$}
+\begin{center}
+\begin{tabular}{|l|c|} \hline
+\multicolumn{2}{|c|}{ \bf 0,1-Jet Tight BB Expected Limit for 8 TeV} \\ \hline
+\bf Baseline          &      \bf 13.5   \\ \hline
+%2th Order Bernstein         & 13.2        \\ \hline
+%3th Order Bernstein         & 13.5        \\ \hline
+4th Order Bernstein         & 14.5        \\ \hline
+5th Order Bernstein         & 14.7        \\ \hline
+\bf 6th Order Bernstein         & \tredbf{17.4}        \\ \hline
+7th Order Bernstein         & 18.0        \\ \hline
+\end{tabular}
+\\
+All Fitting From 110-160\GeVcc{}
+\\ \vspace{1em}
+\large
+\tredbf{
+Performance 30\% Worse
+\\
+Similar to Adding Extra 80\% Systematic Uncertainty
+}
+\\
+\tgreenbf{Include Uncertainty due to Arbitrary Background Shape}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{0,1-Jet Tight BB Limits Comparison v. $m_H$}
+  \vspace{-1em}
+  \begin{columns}[c]
+   \column{60mm}
+      \begin{center}
+        Comparison\\
+        \includegraphics[height=50mm]{redoWholeRange/limitComparison/limits_CompareExpLog.pdf}
+      \end{center}
+   \column{60mm}
+      \begin{center}
+        6th-Order Bernstein
+        \includegraphics[height=50mm]{redoWholeRange/TightBB6BernResults/Jets01PassPtG10BB_8TeV.pdf}
+      \end{center}
+  \end{columns}
+\begin{center}
+  Rougly Similar Behavior to Baseline
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Try to Improve Performance: Allow Larger Bias}
+\small
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|} \hline 
+ & Underestimate & 0,1-Jet Tight BB &0,1-Jet Tight BB \\ 
+Allowable Bias & of Limit & Required Order & Expected Limit \\ \hline
+20\%  & 2\%  & 6 & 17.4  \\ \hline
+32\%  & 5\%  & 5 & 14.7 \\ \hline
+45\%  & 10\% & 5 & 14.7 \\ \hline
+\end{tabular}
+\\
+\vspace{2em}
+\tredbf{
+If 5\% Limit Underestimate Acceptable, 0,1-Jet Tight BB Expected Performance within 10\% of Preliminary Result
+}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Try to Improve Performance: $120\GeVcc{}\leq m_H\leq150\GeVcc{}$}
+\scriptsize
+\begin{center}
+
+\begin{tabular}{|l|r|r|} \hline 
+\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB Maximum Bias} \\ \hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{Alternate PDFs}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
+& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
+4th-Order Bernstein &            0.0\% &          -58.4\% \\ \hline
+5th-Order Bernstein &            4.0\% &           21.9\% \\ \hline
+\textbf{6th-Order Bernstein} &   \textbf{         3.5\%} &    \textbf{        6.5\%} \\ \hline
+7th-Order Bernstein &           -4.2\% &            3.9\% \\ \hline
+8th-Order Bernstein &           -3.8\% &            1.9\% \\ \hline
+9th-Order Bernstein &           -3.1\% &            5.8\% \\ \hline
+\end{tabular}
+
+\small
+\vspace{1em}
+Maximum Bias for $m_H:$ [120,125,135,150] \GeVcc{}
+\\
+\bf
+Not Dramatically Different from Wider $\bm{m_H}$ Range
+\\
+Again Use 6th-Order Bernstein
+\\
+\tredbf{Performance Won't Change}
+\\
+Combining with Previous Slide Change Won't Change Previous Slide Results
+\end{center}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Conclusions}
+\small
+  Robust Background Approach Required for Publication
+  \begin{enumerate}
+\small
+    \item \textbf{Use $\bm{\hgamgam{}}$ Approach ($\bm{\sim6}$th--Order Bernstein)}
+    \begin{itemize}
+      \item \tgreen{Includes Uncertainty Accounting for Arbitrary Shape}
+      \item \tred{Doesn't Use Physics Information about Background}%, \\ Ex: Always Falling, Concave Up (Bernstein May Not Satisfy)}
+      %\item \tredbf{$\bm{\sim}$30\% Worse Performance than Preliminary Result for $\bm{m_H=125\GeVcc{}}$}
+    \end{itemize}
+{\tiny
+\begin{tabular}{|c|c|c|} \hline 
+\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB} \\ \hline
+Allow Bias & Underestimate of Limit & Performance Drop w.r.t. PAS for $m_H=125\GeVcc{}$ \\ \hline
+20\%  & 2\%  & \tredbf{$\sim$30\%}  \\ \hline
+32\%  & 5\%  & \tgreenbf{$\sim$10\%} \\ \hline
+\end{tabular}
+}
+    \item \textbf{Make Further Assumptions on Background}
+    \begin{itemize}
+      \item \tgreen{Use Physics Information about Background}
+      \item \tgreen{Assume Performance Similar to Preliminary Result}
+      \item \tred{Not Yet Investigated}
+      \item Disregard Polynomial Reference Function
+      \item Could Validate v. MC; Bias Study v. Baseline, MSSM....
+    \end{itemize}
+  \end{enumerate}
+\begin{center}
+\vspace{-1ex}
+\tredbf{
+Analysis Group Prefers Option 1 Allowing 32\% Bias
+\\
+What do ARC and Conveners Think?
+}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{To Do}
+  \begin{itemize}
+  \item Calculate Limits for All Categories Allowing 32\% Bias
+    \begin{itemize}
+      \item \tredbf{Overall Performance Could be Different from Tight BB}
+    \end{itemize}
+  \item Things to Check:
+    \begin{itemize}
+      \item Bias Between Chosen Function and Baseline Function
+      \item Bias Between Chosen Function and MSSM Function
+      \item Bias Between Baseline Function and MSSM Function
+    \end{itemize}
+  \end{itemize}
+\begin{center}
+\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \begin{center}
+    \Huge
+    Backup
+  \end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[label=refSelectionMethod]
 \frametitle{Reference Function Order Choice Methodology}
@@ -475,178 +706,6 @@ Problems with Large Bias for High-Order Bernstein
 \end{center}
 \end{frame}
 
-\begin{frame}
-\frametitle{Expected Limit Comparison $m_H=125\GeVcc{}$}
-\begin{center}
-\begin{tabular}{|l|c|} \hline
-\multicolumn{2}{|c|}{ \bf 0,1-Jet Tight BB Expected Limit for 8 TeV} \\ \hline
-\bf Baseline          &      \bf 13.5   \\ \hline
-%2th Order Bernstein         & 13.2        \\ \hline
-%3th Order Bernstein         & 13.5        \\ \hline
-4th Order Bernstein         & 14.5        \\ \hline
-5th Order Bernstein         & 14.7        \\ \hline
-\bf 6th Order Bernstein         & \tredbf{17.4}        \\ \hline
-7th Order Bernstein         & 18.0        \\ \hline
-\end{tabular}
-\\
-All Fitting From 110-160\GeVcc{}
-\\ \vspace{1em}
-\large
-\tredbf{
-Performance 30\% Worse
-\\
-Similar to Adding Extra 80\% Systematic Uncertainty
-}
-\\
-\tgreenbf{Include Uncertainty due to Arbitrary Background Shape}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{0,1-Jet Tight BB Limits Comparison v. $m_H$}
-  \vspace{-1em}
-  \begin{columns}[c]
-   \column{60mm}
-      \begin{center}
-        Comparison\\
-        \includegraphics[height=50mm]{redoWholeRange/limitComparison/limits_CompareExpLog.pdf}
-      \end{center}
-   \column{60mm}
-      \begin{center}
-        6th-Order Bernstein
-        \includegraphics[height=50mm]{redoWholeRange/TightBB6BernResults/Jets01PassPtG10BB_8TeV.pdf}
-      \end{center}
-  \end{columns}
-\begin{center}
-  Rougly Similar Behavior to Baseline
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Try to Improve Performance: Allow Larger Bias}
-\small
-\begin{center}
-
-\begin{tabular}{|c|c|c|c|} \hline 
- & Underestimate & 0,1-Jet Tight BB &0,1-Jet Tight BB \\ 
-Allowable Bias & of Limit & Required Order & Expected Limit \\ \hline
-20\%  & 2\%  & 6 & 17.4  \\ \hline
-32\%  & 5\%  & 5 & 14.7 \\ \hline
-45\%  & 10\% & 5 & 14.7 \\ \hline
-\end{tabular}
-\\
-\vspace{2em}
-\tredbf{
-If 5\% Limit Underestimate Acceptable, 0,1-Jet Tight BB Expected Performance within 10\% of Preliminary Result
-}
-
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Try to Improve Performance: $120\GeVcc{}\leq m_H\leq150\GeVcc{}$}
-\scriptsize
-\begin{center}
-
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB Maximum Bias} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{Alternate PDFs}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-4th-Order Bernstein &            0.0\% &          -58.4\% \\ \hline
-5th-Order Bernstein &            4.0\% &           21.9\% \\ \hline
-\textbf{6th-Order Bernstein} &   \textbf{         3.5\%} &    \textbf{        6.5\%} \\ \hline
-7th-Order Bernstein &           -4.2\% &            3.9\% \\ \hline
-8th-Order Bernstein &           -3.8\% &            1.9\% \\ \hline
-9th-Order Bernstein &           -3.1\% &            5.8\% \\ \hline
-\end{tabular}
-
-\small
-\vspace{1em}
-Maximum Bias for $m_H:$ [120,125,135,150] \GeVcc{}
-\\
-\bf
-Not Dramatically Different from Wider $\bm{m_H}$ Range
-\\
-Again Use 6th-Order Bernstein
-\\
-\tredbf{Performance Won't Change}
-\\
-Combining with Previous Slide Change Won't Change Previous Slide Results
-\end{center}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Conclusions}
-\small
-  Robust Background Approach Required for Publication
-  \begin{enumerate}
-\small
-    \item \textbf{Use $\bm{\hgamgam{}}$ Approach ($\bm{\sim6}$th--Order Bernstein)}
-    \begin{itemize}
-      \item \tgreen{Includes Uncertainty Accounting for Arbitrary Shape}
-      \item \tred{Doesn't Use Physics Information about Background}%, \\ Ex: Always Falling, Concave Up (Bernstein May Not Satisfy)}
-      %\item \tredbf{$\bm{\sim}$30\% Worse Performance than Preliminary Result for $\bm{m_H=125\GeVcc{}}$}
-    \end{itemize}
-{\tiny
-\begin{tabular}{|c|c|c|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB} \\ \hline
-Allow Bias & Underestimate of Limit & Performance Drop w.r.t. PAS for $m_H=125\GeVcc{}$ \\ \hline
-20\%  & 2\%  & \tredbf{$\sim$30\%}  \\ \hline
-32\%  & 5\%  & \tgreenbf{$\sim$10\%} \\ \hline
-\end{tabular}
-}
-    \item \textbf{Make Further Assumptions on Background}
-    \begin{itemize}
-      \item \tgreen{Use Physics Information about Background}
-      \item \tgreen{Assume Performance Similar to Preliminary Result}
-      \item \tred{Not Yet Investigated}
-      \item Disregard Polynomial Reference Function
-      \item Could Validate v. MC; Bias Study v. Baseline, MSSM....
-    \end{itemize}
-  \end{enumerate}
-\begin{center}
-\vspace{-1ex}
-\tredbf{
-Analysis Group Prefers Option 1 Allowing 32\% Bias
-\\
-What do ARC and Conveners Think?
-}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{To Do}
-  \begin{itemize}
-  \item Calculate Limits for All Categories Allowing 32\% Bias
-    \begin{itemize}
-      \item \tredbf{Overall Performance Could be Different from Tight BB}
-    \end{itemize}
-  \item Things to Check:
-    \begin{itemize}
-      \item Bias Between Chosen Function and Baseline Function
-      \item Bias Between Chosen Function and MSSM Function
-      \item Bias Between Baseline Function and MSSM Function
-    \end{itemize}
-  \end{itemize}
-\begin{center}
-\end{center}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-  \begin{center}
-    \Huge
-    Backup
-  \end{center}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Baseline 0,1-Jet Tight BB/BO Fits}
