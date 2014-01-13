@@ -326,9 +326,53 @@ Category                  & Bias ($\sigma/\sigma_{SM}$) & Uncertainty  ($\sigma/
 \end{frame}
 
 \begin{frame}
-\frametitle{Combined Bias}
+\frametitle{Combined Bias w.r.t. Bernstein Reference}
   \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+%  Combined Bias w.r.t. Bernstein (Weighted Average)
+$m_H$         & Bias & Uncertainty & \\ 
+(\GeVcc{})         & ($\sigma/\sigma_{SM}$) & ($\sigma/\sigma_{SM}$) & $\frac{\mathrm{Bias}}{\mathrm{Uncertainty}}$ \\ \hline \hline
+115                      &        -0.35 &        3.43 &       10.3\% \\ \hline
+120                      &         0.19 &        3.22 &       5.8\% \\ \hline
+125                      &         0.41 &        3.17 &       12.9\% \\ \hline
+130                      &         0.56 &        3.60 &       11.5\% \\ \hline
+135                      &         0.18 &        4.28 &       4.1\% \\ \hline
+140                      &         0.28 &        5.52 &       5.1\% \\ \hline
+145                      &         0.47 &        7.85 &       6.0\% \\ \hline
+150                      &         -0.27 &       12.8 &       -2.1\% \\ \hline
+155                      &         -2.1 &       29.7 &       -7.1\% \\ \hline
+    \end{tabular}
   \end{center}
+  \begin{columns}[c]
+     \column{65mm}
+    \scriptsize
+    %Combined Categories Using ``Weighted Mean'', using Weights, $w = 1/\Delta\mu^2$
+    \begin{eqnarray*}
+      w_{tot} &=& \sum w_i \\
+      <\mu> &=& \frac{1}{w_{tot}} \sum w_i \mu_i \\
+      <\Delta\mu> &=& \frac{1}{w_{tot}} \sqrt{\sum w_i^2 \Delta\mu_i^2} = \frac{1}{\sqrt{w_{tot}}}
+    \end{eqnarray*}
+     \column{55mm}
+      %\begin{itemize}
+      %\end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Combined Bias w.r.t. Sum of Exponential Reference}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+%  Combined Bias w.r.t. Bernstein (Weighted Average)
+$m_H$         & Bias & Uncertainty & \\ 
+(\GeVcc{})         & ($\sigma/\sigma_{SM}$) & ($\sigma/\sigma_{SM}$) & $\frac{\mathrm{Bias}}{\mathrm{Uncertainty}}$ \\ \hline \hline
+    \end{tabular}
+\\
+  \small
+  \end{center}
+  %\begin{itemize}
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
