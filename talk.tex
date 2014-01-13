@@ -15,8 +15,8 @@
 %\subtitle{Updates}
 
 %\author{Justin Hugon \\ University of Florida}
-%\date{\today}
-\date{November 21, 2013}
+\date{\today}
+%\date{November 21, 2013}
 %\date{\today \\ Florida $H\rightarrow ff$ Meeting}
 %\date{H2Mu Meeting \\ \today}
 
@@ -423,117 +423,12 @@ Similar to Adding Extra 80\% Systematic Uncertainty
 \end{frame}
 
 \begin{frame}
-\frametitle{Try to Improve Performance: Allow Larger Bias}
-\small
-\begin{center}
-
-\begin{tabular}{|c|c|c|c|} \hline 
- & Underestimate & 0,1-Jet Tight BB &0,1-Jet Tight BB \\ 
-Allowable Bias & of Limit & Required Order & Expected Limit \\ \hline
-20\%  & 2\%  & 6 & 17.4  \\ \hline
-32\%  & 5\%  & 5 & 14.7 \\ \hline
-45\%  & 10\% & 5 & 14.7 \\ \hline
-\end{tabular}
-\\
-\vspace{2em}
-\tredbf{
-If 5\% Limit Underestimate Acceptable, 0,1-Jet Tight BB Expected Performance within 10\% of Preliminary Result
-}
-
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Try to Improve Performance: $120\GeVcc{}\leq m_H\leq150\GeVcc{}$}
-\scriptsize
-\begin{center}
-
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB Maximum Bias} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{Alternate PDFs}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-4th-Order Bernstein &            0.0\% &          -58.4\% \\ \hline
-5th-Order Bernstein &            4.0\% &           21.9\% \\ \hline
-\textbf{6th-Order Bernstein} &   \textbf{         3.5\%} &    \textbf{        6.5\%} \\ \hline
-7th-Order Bernstein &           -4.2\% &            3.9\% \\ \hline
-8th-Order Bernstein &           -3.8\% &            1.9\% \\ \hline
-9th-Order Bernstein &           -3.1\% &            5.8\% \\ \hline
-\end{tabular}
-
-\small
-\vspace{1em}
-Maximum Bias for $m_H:$ [120,125,135,150] \GeVcc{}
-\\
-\bf
-Not Dramatically Different from Wider $\bm{m_H}$ Range
-\\
-Again Use 6th-Order Bernstein
-\\
-\tredbf{Performance Won't Change}
-\\
-Combining with Previous Slide Change Won't Change Previous Slide Results
-\end{center}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Conclusions}
-\small
-  Robust Background Approach Required for Publication
-  \begin{enumerate}
-\small
-    \item \textbf{Use $\bm{\hgamgam{}}$ Approach ($\bm{\sim6}$th--Order Bernstein)}
-    \begin{itemize}
-      \item \tgreen{Includes Uncertainty Accounting for Arbitrary Shape}
-      \item \tred{Doesn't Use Physics Information about Background}%, \\ Ex: Always Falling, Concave Up (Bernstein May Not Satisfy)}
-      %\item \tredbf{$\bm{\sim}$30\% Worse Performance than Preliminary Result for $\bm{m_H=125\GeVcc{}}$}
-    \end{itemize}
-{\tiny
-\begin{tabular}{|c|c|c|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB} \\ \hline
-Allow Bias & Underestimate of Limit & Performance Drop w.r.t. PAS for $m_H=125\GeVcc{}$ \\ \hline
-20\%  & 2\%  & \tredbf{$\sim$30\%}  \\ \hline
-32\%  & 5\%  & \tgreenbf{$\sim$10\%} \\ \hline
-\end{tabular}
-}
-    \item \textbf{Make Further Assumptions on Background}
-    \begin{itemize}
-      \item \tgreen{Use Physics Information about Background}
-      \item \tgreen{Assume Performance Similar to Preliminary Result}
-      \item \tred{Not Yet Investigated}
-      \item Disregard Polynomial Reference Function
-      \item Could Validate v. MC; Bias Study v. Baseline, MSSM....
-    \end{itemize}
-  \end{enumerate}
-\begin{center}
-\vspace{-1ex}
-\tredbf{
-Analysis Group Prefers Option 1 Allowing 32\% Bias
-\\
-What do ARC and Conveners Think?
-}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{To Do}
-  \begin{itemize}
-  \item Calculate Limits for All Categories Allowing 32\% Bias
-    \begin{itemize}
-      \item \tredbf{Overall Performance Could be Different from Tight BB}
-    \end{itemize}
-  \item Things to Check:
-    \begin{itemize}
-      \item Bias Between Chosen Function and Baseline Function
-      \item Bias Between Chosen Function and MSSM Function
-      \item Bias Between Baseline Function and MSSM Function
-    \end{itemize}
-  \end{itemize}
+\frametitle{Combination Performance}
 \begin{center}
 \end{center}
 \end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -917,27 +812,6 @@ Not surprising: Similar Form to Expected Voigtian+Exponential Shape
 \end{frame}
 
 \begin{frame}
-\frametitle{Sum of Powers 0,1-Jet Tight BB v. $H\rightarrow\gamma\gamma$}
-  \begin{columns}[c]
-   \column{60mm}
-      \begin{center}
-        \includegraphics[height=55mm]{wholeRangeHggStudy1/plotsOrderStudyExpPow/order_Shape_Jets01PassPtG10BB_SumPow2}
-      \end{center}
-   \column{60mm}
-      \begin{center}
-        $H\rightarrow\gamma\gamma$ AN-13-008 \\
-        \includegraphics[height=42mm]{wholeRangeHggStudy1/plotsHgg/truth_hgg_8TeV_2013moriond_cic0_1Pow}
-      \end{center}
-  \end{columns}
-  \begin{center}
-    \bf
-    \textcolor{red}{
-    $H\rightarrow\gamma\gamma$ Shape Much Simpler to Fit
-    }
-  \end{center}
-\end{frame}
-
-\begin{frame}
 \frametitle{Bernstein 0,1-Jet Tight BO}
   \begin{columns}[c]
    \column{60mm}
@@ -1169,116 +1043,6 @@ Other 0,1-Jet Categories \& Higher Orders Similar
     \textcolor{red}{
     $H\rightarrow\gamma\gamma$ Shape Much Simpler to Fit
     }
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Study v. Mass: 0,1-Jet Tight BB, 4th Order Bernstein}
-  \begin{center}
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB Bias for 4th-Order Bernstein} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{$m_{H}$ [GeV/c$^{2}$]}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-       115 &            0.1\% &          -73.8\% \\ \hline
-       120 &           -0.0\% &          -58.4\% \\ \hline
-       125 &           -0.0\% &           36.3\% \\ \hline
-       135 &            0.0\% &           23.7\% \\ \hline
-       150 &           -0.0\% &           10.9\% \\ \hline
-       155 &           -0.1\% &           79.6\% \\ \hline
-\end{tabular}
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Study v. Mass: 0,1-Jet Tight BB, 5th Order Bernstein}
-  \begin{center}
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB Bias for 5th-Order Bernstein} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{$m_{H}$ [GeV/c$^{2}$]}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-       115 &            1.5\% &          -32.0\% \\ \hline
-       120 &            4.0\% &            3.0\% \\ \hline
-       125 &           -0.6\% &           21.9\% \\ \hline
-       135 &           -1.8\% &          -17.4\% \\ \hline
-       150 &           -0.1\% &            9.7\% \\ \hline
-       155 &           -5.0\% &          -27.6\% \\ \hline
-\end{tabular}
-
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Study v. Mass: 0,1-Jet Tight BB, 6th Order Bernstein}
-  \begin{center}
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BB Bias for 6th-Order Bernstein} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{$m_{H}$ [GeV/c$^{2}$]}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-       115 &           -0.0\% &          -14.2\% \\ \hline
-       120 &            3.5\% &            4.7\% \\ \hline
-       125 &           -0.3\% &            6.5\% \\ \hline
-       135 &           -2.5\% &           -2.0\% \\ \hline
-       150 &           -1.5\% &           -4.4\% \\ \hline
-       155 &           -1.7\% &           -3.8\% \\ \hline
-\end{tabular}
-
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Study v. Mass: 0,1-Jet Tight BO, 5th Order Bernstein}
-  \begin{center}
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BO Bias for 5th-Order Bernstein} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{$m_{H}$ [GeV/c$^{2}$]}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-       115 &         -107.4\% &          -71.2\% \\ \hline
-       120 &          -17.0\% &           12.4\% \\ \hline
-       125 &           90.2\% &           50.2\% \\ \hline
-       135 &          -65.1\% &          -43.5\% \\ \hline
-       150 &           94.3\% &           34.6\% \\ \hline
-       155 &          -21.5\% &          -68.0\% \\ \hline
-\end{tabular}
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Study v. Mass: 0,1-Jet Tight BO, 6th Order Bernstein}
-  \begin{center}
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BO Bias for 6th-Order Bernstein} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{$m_{H}$ [GeV/c$^{2}$]}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-       115 &            0.0\% &          -25.9\% \\ \hline
-       120 &            0.0\% &           16.1\% \\ \hline
-       125 &            0.0\% &            6.7\% \\ \hline
-       135 &           -0.0\% &           -2.5\% \\ \hline
-       150 &            0.0\% &           -7.3\% \\ \hline
-       155 &           -0.0\% &            2.9\% \\ \hline
-\end{tabular}
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Study v. Mass: 0,1-Jet Tight BO, 7th Order Bernstein}
-  \begin{center}
-\begin{tabular}{|l|r|r|} \hline 
-\multicolumn{3}{|c|}{ \bf 0,1-Jet Tight BO Bias for 7th-Order Bernstein} \\ \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{$m_{H}$ [GeV/c$^{2}$]}} & \multicolumn{2}{c|}{Reference PDFs} \\ \cline{2-3} 
-& \multicolumn{1}{c|}{      Bernstein} & \multicolumn{1}{c|}{Sum of Exponentials} \\ \hline
-       115 &           34.0\% &          -12.8\% \\ \hline
-       120 &           -2.1\% &            7.2\% \\ \hline
-       125 &          -18.2\% &           -0.7\% \\ \hline
-       135 &           18.3\% &            0.4\% \\ \hline
-       150 &          -22.0\% &            0.2\% \\ \hline
-       155 &           17.7\% &           -2.9\% \\ \hline
-\end{tabular}
-\\ \vspace{1em}
-\textbf{
-Large Bias \jra{} Too High Order Polynomial
-\\
-Fit Errors Underestimated
-}
   \end{center}
 \end{frame}
 
