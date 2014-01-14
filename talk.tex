@@ -23,29 +23,17 @@
 
 \begin{frame}
 \frametitle{Recap}
-\vspace{-1em}
-\begin{columns}[c]
- \column{60mm}
-    \textbf{At PAS Approval:}
+    \textbf{Using $\bm{H\rightarrow \gamma\gamma}$ Background Strategy}
     \begin{itemize}
-    \small
-      \item \tredbf{How to Deal with Uncertainty Due to Background Function Choice?}
-      \item Compared 2 Functions
-      \item Bias Between Them Up to 60\%
-      \item Chose To Report Narrow Range with Max Bias: 20\%
-      \item Assume Uncertainty due to Bias Negligible
-      \item Bias w.r.t. Other Functions Unknown
+      \item Perform Unbinned Fit of Full Mass Range
+      \item Background Constrained by Data and Background Parameterization
+      \item \tredbf{Can't Include Systematic for Background Parameterization Choice}
+      \item Must Show that Background Shape Bias is Negligible
+      \begin{itemize}
+        \item Preliminary Result Bias Not Shown to be Negligible
+        \item ARC \& Higgs Group Desire Robust Background Treatment for Publication
+      \end{itemize}
     \end{itemize}
- \column{60mm}
-    \begin{center}
-      \includegraphics[height=55mm]{plots/limitsComparison_m110to160.pdf}
-      \\ \small
-      Observed Limits Differ $< 10\%$
-    \end{center}
-\end{columns}
-\begin{center}
-  \large \tredbf{Community Desires More Robust Background Uncertainty Treatment for Publication}
-\end{center}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,7 +41,7 @@
 \begin{frame}
   \begin{center}
     \Huge
-    Use $\mathrm{H} \rightarrow \gamma\gamma$ Background Function Approach for $\mathrm{H} \rightarrow \mu^+\mu^-$
+    Use $\mathrm{H} \rightarrow \gamma\gamma$ Background Function Choice Method for $\mathrm{H} \rightarrow \mu^+\mu^-$
   \end{center}
 \end{frame}
 
@@ -89,6 +77,33 @@
   \end{tabular}
 \end{center}
 \end{frame}
+
+\begin{frame}
+\frametitle{Background Shape: $\bm{H\rightarrow\gamma\gamma}$ v. $\bm{H\rightarrow\mu\mu$}}
+  \begin{columns}[c]
+   \column{60mm}
+      \begin{center}
+        $H\rightarrow\mu\mu$ \\
+        \includegraphics[height=55mm]{2013-10-04SystematicBiasStudy1/order_Shape_Jets01PassPtG10BB_SumPow2}
+      \end{center}
+   \column{60mm}
+      \begin{center}
+        $H\rightarrow\gamma\gamma$ AN-13-008 \\
+        \includegraphics[height=42mm]{2013-10-04SystematicBiasStudy1/truth_hgg_8TeV_2013moriond_cic0_1Pow}
+      \end{center}
+  \end{columns}
+  \begin{center}
+    \bf
+    \textcolor{red}{
+    $H\rightarrow\gamma\gamma$ Shape Much Simpler to Fit
+    }
+    \\
+    $H\rightarrow\mu\mu$ has "Change in Curvature" \& Wider Signal Bump
+    \\
+    $H\rightarrow\mu\mu$ Requires Higher Orders
+  \end{center}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Reference Function Orders Selected}
@@ -164,68 +179,6 @@ Category                  & Selected Order      & Bernstein & SumExp \\ \hline \
 \end{frame}
 
 \begin{frame}
-\frametitle{Examples Bias w.r.t. Bernstein Reference}
-  \vspace{-1ex}
-  \begin{center}
-    Bias for $m_H=125\GeVcc{}$
-    \\ \vspace{0.5ex}
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|} \hline
-%  Bernstein  Bias per category for mh =  125
-Category                  & Bias ($\sigma/\sigma_{SM}$) & Uncertainty  ($\sigma/\sigma_{SM}$) & Bias/Uncertainty \\ \hline \hline
-0,1-Jet Tight BB         &       -0.1 &        7.1 &      -0.01 \\ \hline
-0,1-Jet Tight BO         &        0.0 &        7.4 &       0.00 \\ \hline
-0,1-Jet Tight BE         &       -1.6 &       14.8 &      -0.11 \\ \hline
-0,1-Jet Tight OO         &        0.0 &       13.0 &       0.00 \\ \hline
-0,1-Jet Tight OE         &        0.1 &       18.0 &       0.01 \\ \hline
-0,1-Jet Tight EE         &        8.4 &       46.0 &       0.18 \\ \hline
-0,1-Jet Loose BB         &        1.0 &       26.4 &       0.04 \\ \hline
-0,1-Jet Loose BO         &        2.0 &       27.7 &       0.07 \\ \hline
-0,1-Jet Loose BE         &        0.1 &       54.8 &       0.00 \\ \hline
-0,1-Jet Loose OO         &        3.5 &       53.6 &       0.07 \\ \hline
-0,1-Jet Loose OE         &        3.9 &       71.6 &       0.05 \\ \hline
-0,1-Jet Loose EE         &       26.7 &      176.5 &       0.15 \\ \hline
-2-Jet VBF Tight          &        0.0 &        5.1 &       0.00 \\ \hline
-2-Jet GF Tight           &        2.6 &       14.7 &       0.18 \\ \hline
-2-Jet Loose              &        0.2 &       13.6 &       0.01 \\ \hline
-    \end{tabular}
-\\
-  \small
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Examples Bias w.r.t. Sum of Exponentials Reference}
-  \vspace{-1ex}
-  \begin{center}
-    Bias for $m_H=125\GeVcc{}$
-    \\ \vspace{0.5ex}
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|} \hline
-%  SumExp  Bias per category for mh =  125
-Category                  & Bias ($\sigma/\sigma_{SM}$) & Uncertainty  ($\sigma/\sigma_{SM}$) & Bias/Uncertainty \\ \hline \hline
-0,1-Jet Tight BB         &        1.6 &        7.1 &       0.22 \\ \hline
-0,1-Jet Tight BO         &        0.7 &        7.5 &       0.09 \\ \hline
-0,1-Jet Tight BE         &        2.4 &       14.8 &       0.16 \\ \hline
-0,1-Jet Tight OO         &        2.1 &       13.0 &       0.16 \\ \hline
-0,1-Jet Tight OE         &        1.2 &       18.0 &       0.07 \\ \hline
-0,1-Jet Tight EE         &        9.0 &       45.9 &       0.20 \\ \hline
-0,1-Jet Loose BB         &        5.8 &       26.6 &       0.22 \\ \hline
-0,1-Jet Loose BO         &        4.3 &       27.8 &       0.15 \\ \hline
-0,1-Jet Loose BE         &        6.6 &       55.0 &       0.12 \\ \hline
-0,1-Jet Loose OO         &        7.4 &       53.9 &       0.14 \\ \hline
-0,1-Jet Loose OE         &        9.4 &       71.6 &       0.13 \\ \hline
-0,1-Jet Loose EE         &       20.9 &      178.2 &       0.12 \\ \hline
-2-Jet VBF Tight          &       -0.4 &        5.3 &      -0.08 \\ \hline
-2-Jet GF Tight           &        3.6 &       14.5 &       0.25 \\ \hline
-2-Jet Loose              &       -1.2 &       13.7 &      -0.09 \\ \hline
-    \end{tabular}
-\\
-  \small
-  \end{center}
-\end{frame}
-
-\begin{frame}
 \frametitle{Combined Bias w.r.t. Bernstein Reference}
   \begin{center}
     \scriptsize
@@ -287,7 +240,11 @@ $m_H$         & Bias & Uncertainty & \\
   \small
 \normalsize
 \vspace{1em}
-\textbf{Bernstein Bias w.r.t. Sum of Exponentials Larger}
+\textbf{Bernstein Bias w.r.t. Sum of Exponentials Large}
+\\
+Is a Large Biases Expected when Combining many Small Biases?
+\\
+May need to Require Lower per-Category Biases to Ensure Small Combined Bias
   \end{center}
 \end{frame}
 
@@ -915,23 +872,64 @@ Other 0,1-Jet Categories \& Higher Orders Similar
 \end{frame}
 
 \begin{frame}
-\frametitle{Sum of Powers 0,1-Jet Tight BB v. $H\rightarrow\gamma\gamma$}
-  \begin{columns}[c]
-   \column{60mm}
-      \begin{center}
-        \includegraphics[height=55mm]{2013-10-04SystematicBiasStudy1/order_Shape_Jets01PassPtG10BB_SumPow2}
-      \end{center}
-   \column{60mm}
-      \begin{center}
-        $H\rightarrow\gamma\gamma$ AN-13-008 \\
-        \includegraphics[height=42mm]{2013-10-04SystematicBiasStudy1/truth_hgg_8TeV_2013moriond_cic0_1Pow}
-      \end{center}
-  \end{columns}
+\frametitle{Example Bias w.r.t. Bernstein Reference}
+  \vspace{-1ex}
   \begin{center}
-    \bf
-    \textcolor{red}{
-    $H\rightarrow\gamma\gamma$ Shape Much Simpler to Fit
-    }
+    Bias for $m_H=125\GeVcc{}$
+    \\ \vspace{0.5ex}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+%  Bernstein  Bias per category for mh =  125
+Category                  & Bias ($\sigma/\sigma_{SM}$) & Uncertainty  ($\sigma/\sigma_{SM}$) & Bias/Uncertainty \\ \hline \hline
+0,1-Jet Tight BB         &       -0.1 &        7.1 &      -0.01 \\ \hline
+0,1-Jet Tight BO         &        0.0 &        7.4 &       0.00 \\ \hline
+0,1-Jet Tight BE         &       -1.6 &       14.8 &      -0.11 \\ \hline
+0,1-Jet Tight OO         &        0.0 &       13.0 &       0.00 \\ \hline
+0,1-Jet Tight OE         &        0.1 &       18.0 &       0.01 \\ \hline
+0,1-Jet Tight EE         &        8.4 &       46.0 &       0.18 \\ \hline
+0,1-Jet Loose BB         &        1.0 &       26.4 &       0.04 \\ \hline
+0,1-Jet Loose BO         &        2.0 &       27.7 &       0.07 \\ \hline
+0,1-Jet Loose BE         &        0.1 &       54.8 &       0.00 \\ \hline
+0,1-Jet Loose OO         &        3.5 &       53.6 &       0.07 \\ \hline
+0,1-Jet Loose OE         &        3.9 &       71.6 &       0.05 \\ \hline
+0,1-Jet Loose EE         &       26.7 &      176.5 &       0.15 \\ \hline
+2-Jet VBF Tight          &        0.0 &        5.1 &       0.00 \\ \hline
+2-Jet GF Tight           &        2.6 &       14.7 &       0.18 \\ \hline
+2-Jet Loose              &        0.2 &       13.6 &       0.01 \\ \hline
+    \end{tabular}
+\\
+  \small
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example Bias w.r.t. Sum of Exponentials Reference}
+  \vspace{-1ex}
+  \begin{center}
+    Bias for $m_H=125\GeVcc{}$
+    \\ \vspace{0.5ex}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+%  SumExp  Bias per category for mh =  125
+Category                  & Bias ($\sigma/\sigma_{SM}$) & Uncertainty  ($\sigma/\sigma_{SM}$) & Bias/Uncertainty \\ \hline \hline
+0,1-Jet Tight BB         &        1.6 &        7.1 &       0.22 \\ \hline
+0,1-Jet Tight BO         &        0.7 &        7.5 &       0.09 \\ \hline
+0,1-Jet Tight BE         &        2.4 &       14.8 &       0.16 \\ \hline
+0,1-Jet Tight OO         &        2.1 &       13.0 &       0.16 \\ \hline
+0,1-Jet Tight OE         &        1.2 &       18.0 &       0.07 \\ \hline
+0,1-Jet Tight EE         &        9.0 &       45.9 &       0.20 \\ \hline
+0,1-Jet Loose BB         &        5.8 &       26.6 &       0.22 \\ \hline
+0,1-Jet Loose BO         &        4.3 &       27.8 &       0.15 \\ \hline
+0,1-Jet Loose BE         &        6.6 &       55.0 &       0.12 \\ \hline
+0,1-Jet Loose OO         &        7.4 &       53.9 &       0.14 \\ \hline
+0,1-Jet Loose OE         &        9.4 &       71.6 &       0.13 \\ \hline
+0,1-Jet Loose EE         &       20.9 &      178.2 &       0.12 \\ \hline
+2-Jet VBF Tight          &       -0.4 &        5.3 &      -0.08 \\ \hline
+2-Jet GF Tight           &        3.6 &       14.5 &       0.25 \\ \hline
+2-Jet Loose              &       -1.2 &       13.7 &      -0.09 \\ \hline
+    \end{tabular}
+\\
+  \small
   \end{center}
 \end{frame}
 
