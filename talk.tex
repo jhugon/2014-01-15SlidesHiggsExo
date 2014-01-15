@@ -251,27 +251,27 @@ May need to Require Lower per-Category Biases to Ensure Small Combined Bias
 \begin{frame}
 \frametitle{Expected Limit Comparison $m_H=125\GeVcc{}$}
 \begin{center}
-\begin{tabular}{|l|c|} \hline
-\multicolumn{2}{|c|}{ \bf 0,1-Jet Tight BB Expected Limit for 8 TeV} \\ \hline
-\bf Baseline          &      \bf 13.5   \\ \hline
-%2th Order Bernstein         & 13.2        \\ \hline
-%3th Order Bernstein         & 13.5        \\ \hline
-4th Order Bernstein         & 14.5        \\ \hline
-5th Order Bernstein         & 14.7        \\ \hline
-\bf 6th Order Bernstein         & \tredbf{17.4}        \\ \hline
-7th Order Bernstein         & 18.0        \\ \hline
-\end{tabular}
-\\
-All Fitting From 110-160\GeVcc{}
-\\ \vspace{1em}
-\large
-\tredbf{
-Performance 30\% Worse
-\\
-Similar to Adding Extra 80\% Systematic Uncertainty
-}
-\\
-\textbf{Include Uncertainty due to Arbitrary Background Shape}
+%\begin{tabular}{|l|c|} \hline
+%\multicolumn{2}{|c|}{ \bf 0,1-Jet Tight BB Expected Limit for 8 TeV} \\ \hline
+%\bf Baseline          &      \bf 13.5   \\ \hline
+%%2th Order Bernstein         & 13.2        \\ \hline
+%%3th Order Bernstein         & 13.5        \\ \hline
+%4th Order Bernstein         & 14.5        \\ \hline
+%5th Order Bernstein         & 14.7        \\ \hline
+%\bf 6th Order Bernstein         & \tredbf{17.4}        \\ \hline
+%7th Order Bernstein         & 18.0        \\ \hline
+%\end{tabular}
+%\\
+%All Fitting From 110-160\GeVcc{}
+%\\ \vspace{1em}
+%\large
+%\tredbf{
+%Performance 30\% Worse
+%\\
+%Similar to Adding Extra 80\% Systematic Uncertainty
+%}
+%\\
+%\textbf{Include Uncertainty due to Arbitrary Background Shape}
 \end{center}
 \end{frame}
 
@@ -930,6 +930,53 @@ Category                  & Bias ($\sigma/\sigma_{SM}$) & Uncertainty  ($\sigma/
     \end{tabular}
 \\
   \small
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bias \& Limits for Reduced Categories}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+           & 7+8 TeV Combined & Combined &          \\
+Categories & Expected Limit   & Bias     & Comments \\ \hline \hline
+PAS Baseline & 5.1$\times$SM  & ??       & Background Bias Not         \\
+                   &           &            & Taken into Account          \\ \hline
+All Categories & 6.1$\times$SM  & 29\%       & Includes Troublesome         \\
+                   &           &            & 6th-Order Bernstein         \\ \hline
+0,1-Jet Pass \& All 2-Jet & 6.2$\times$SM  & 22\%       & Includes Troublesome         \\
+(Not 0,1-Jet Fail) &           &            & 6th-Order Bernstein          \\ \hline
+0,1-Jet Pass BB \& BO & 6.8$\times$SM  & 14\%       & Includes Troublesome         \\
+\& All 2-Jet &           &            & 6th-Order Bernstein          \\ \hline
+0,1-Jet Pass BB & 7.4$\times$SM  & 10\%       & Only $\leq5$-Order         \\
+\& All 2-Jet &           &            &        Bernstein  \\ \hline
+0,1-Jet Pass BB & 8.1$\times$SM  & 7\%       & Only $\leq5$-Order         \\
+\& 2-Jet VBF Tight &           &            & Bernstein         \\ \hline
+    \end{tabular}
+    \\ for $m_H=125\GeVcc{}$
+  \small
+  \\ \vspace{1em}
+  Quick Option Toward Publication: Reduce Categories
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bias Dependance on Signal Width}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+Category & Bernstein & Normal Mass Resolution & 50\% Mass Resolution \\
+         & Order     & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
+0,1-Jet Tight BB & 5 & 22\% & 15\% \\ \hline
+0,1-Jet Tight BO & 6 & 9\%  &  5\% \\ \hline
+0,1-Jet Tight BE & 6 & 16\% & 12\% \\ \hline
+    \end{tabular}
+    \\ for $m_H=125\GeVcc{}$
+  \small
+  \\ \vspace{1em}
+  Narrower Signal Peak, Like $H\rightarrow\gamma\gamma$,
+   Leads to Smaller Signal Bias
+  Bernstein ``Wiggles'' Affect Wider $H\rightarrow\mu\mu$ Signal Peak
   \end{center}
 \end{frame}
 
