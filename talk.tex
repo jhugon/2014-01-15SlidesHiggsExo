@@ -11,12 +11,12 @@
 \usepackage{multirow}
 \definecolor{darkgreen}{HTML}{008000}
 
-\title{Search for SM $H \rightarrow \mu \mu$: Background Shape Treatment}
-%\subtitle{Updates}
+\title{Search for SM $H \rightarrow \mu \mu$}
+\subtitle{Bernstein Polynomial Background Shape Treatment}
 
 %\author{Justin Hugon \\ University of Florida}
-\date{\today}
-%\date{November 21, 2013}
+%\date{\today}
+\date{January 21, 2014}
 %\date{\today \\ Florida $H\rightarrow ff$ Meeting}
 %\date{H2Mu Meeting \\ \today}
 
@@ -108,6 +108,7 @@
 }
 \makeatother
 
+\title{Search for SM $H \rightarrow \mu \mu$: Bernstein Polynomial Background Shape Treatment}
 \author{Justin Hugon, University of Florida}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -127,15 +128,6 @@
         \item ARC \& Higgs Group Desire Robust Background Treatment for Publication
       \end{itemize}
     \end{itemize}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-  \begin{center}
-    \Huge
-    Use $\mathrm{H} \rightarrow \gamma\gamma$ Background Function Choice Method for $\mathrm{H} \rightarrow \mu^+\mu^-$
-  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -279,7 +271,7 @@ Category                  & Selected Order      & Bernstein & SumExp \\ \hline \
 %  Combined Bias w.r.t. Bernstein (Weighted Average)
 $m_H$         & Bias & Uncertainty & \\ 
 (\GeVcc{})         & ($\sigma/\sigma_{SM}$) & ($\sigma/\sigma_{SM}$) & $\frac{\mathrm{Bias}}{\mathrm{Uncertainty}}$ \\ \hline \hline
-115   &      -0.023 &   3.33 &      -0.7\%     \\ \hline
+%115   &      -0.023 &   3.33 &      -0.7\%     \\ \hline
 120   &       0.30  &   3.21 &       9.3\%     \\ \hline
 125   &       0.15  &   3.10 &       4.8\%     \\ \hline
 130   &       0.13  &   3.46 &       3.6\%     \\ \hline
@@ -287,11 +279,12 @@ $m_H$         & Bias & Uncertainty & \\
 140   &       0.07  &   5.33 &       1.3\%     \\ \hline
 145   &      -0.20  &   7.59 &      -2.6\%     \\ \hline
 150   &      -0.54  &  12.6  &      -4.3\%     \\ \hline
-155   &      -1.39  &  29.1  &      -4.8\%     \\ \hline
+%155   &      -1.39  &  29.1  &      -4.8\%     \\ \hline
     \end{tabular}
 \\ \vspace{1ex}
 \normalsize
 \textbf{Bernstein w.r.t. Bernstein Bias Small, as Expected}
+\\ \vspace{-1em}
   \end{center}
   \begin{columns}[c]
      \column{55mm}
@@ -319,7 +312,7 @@ $m_H$         & Bias & Uncertainty & \\
 $m_H$         & Bias & Uncertainty & \\ 
 (\GeVcc{})         & ($\sigma/\sigma_{SM}$) & ($\sigma/\sigma_{SM}$) & $\frac{\mathrm{Bias}}{\mathrm{Uncertainty}}$ \\ \hline \hline
 %  Combined Bias w.r.t. Bernstein (Weighted Average)
-115   &      -2.15  &       3.35      &    -64.1\%    \\ \hline
+%115   &      -2.15  &       3.35      &    -64.1\%    \\ \hline
 120   &      -0.02  &       3.18      &     -0.7\%    \\ \hline
 125   &       0.91  &       3.14      &     28.9\%    \\ \hline
 130   &      -0.01  &       3.60      &     -0.3\%    \\ \hline
@@ -327,7 +320,7 @@ $m_H$         & Bias & Uncertainty & \\
 140   &      -0.78  &       5.55      &    -13.8\%    \\ \hline
 145   &       1.12  &       7.90      &     14.1\%    \\ \hline
 150   &       1.60  &      12.3       &     13.1\%    \\ \hline
-155   &      -6.22  &      28.0       &    -22.2\%    \\ \hline
+%155   &      -6.22  &      28.0       &    -22.2\%    \\ \hline
     \end{tabular}
 \\
   \small
@@ -335,37 +328,104 @@ $m_H$         & Bias & Uncertainty & \\
 \vspace{1em}
 \textbf{Bernstein Bias w.r.t. Sum of Exponentials Large}
 \\
-Is a Large Biases Expected when Combining many Small Biases?
+Is a Large Bias Expected when Combining many Small Biases?
 \\
-May need to Require Lower per-Category Biases to Ensure Small Combined Bias
+May need to Require Lower per-Category Biases (Raise Orders)
   \end{center}
 \end{frame}
 
 \begin{frame}
+\frametitle{Issues with 6th-Order Bernsteins}
+\begin{columns}[c]
+ \column{60mm}
+  \small
+  \begin{itemize}
+    \item Are Fit Errors Calculated Properly?
+    \item ``Pull'' Sometimes too Wide: \\$\Delta N_{sig}$ Under-Estimated
+    \item \tredbf{Causes Bias Over-Estimates}
+    \item \tredbf{May Cause Coverage Problems}
+  \end{itemize}
+  \begin{center}
+    \tiny
+    \begin{tabular}{|l|c|c|c|c|} \hline 
+    \multicolumn{5}{|c|}{\bf 0,1-Jet Tight BB} \\ \hline
+    \bf Order &  \bf 1-5 &\bf  6,7 &\bf  8 &\bf  9 \\ \hline
+    Bernstein $\sigma_{Pull}$ & $\sim0\%$ & $\sim10\%$ & $\sim20\%$ & $\sim30\%$ \\ \hline
+    \end{tabular}
+  \end{center}
+ \column{60mm}
+    \begin{center}
+      \includegraphics[height=55mm]{redoWholeRange/biasStudy/bias_Jets01PassPtG10BB_115_Z_RefBernstein_Alt6Bernstein.pdf}
+      %\includegraphics[height=55mm]{redoWholeRange/biasStudy/bias_Jets01PassPtG10BO_115_Z_RefBernstein_Alt6Bernstein.pdf}
+    \end{center}
+\end{columns}
+\begin{center}
+  \large
+  \tredbf{
+  Raising Bernstein Order Leads to Coverage Problems
+  }
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
 \frametitle{Expected Limit Comparison $m_H=125\GeVcc{}$}
 \begin{center}
-%\begin{tabular}{|l|c|} \hline
-%\multicolumn{2}{|c|}{ \bf 0,1-Jet Tight BB Expected Limit for 8 TeV} \\ \hline
-%\bf Baseline          &      \bf 13.5   \\ \hline
-%%2th Order Bernstein         & 13.2        \\ \hline
-%%3th Order Bernstein         & 13.5        \\ \hline
-%4th Order Bernstein         & 14.5        \\ \hline
-%5th Order Bernstein         & 14.7        \\ \hline
-%\bf 6th Order Bernstein         & \tredbf{17.4}        \\ \hline
-%7th Order Bernstein         & 18.0        \\ \hline
-%\end{tabular}
-%\\
-%All Fitting From 110-160\GeVcc{}
-%\\ \vspace{1em}
-%\large
-%\tredbf{
-%Performance 30\% Worse
-%\\
-%Similar to Adding Extra 80\% Systematic Uncertainty
-%}
-%\\
-%\textbf{Include Uncertainty due to Arbitrary Background Shape}
+\begin{tabular}{|l|c|} \hline
+\multicolumn{2}{|c|}{ $7+8$ TeV Expected Limit Combination for $m_H=125\GeVcc{}$} \\ \hline
+Baseline (in PAS)          &    5.1$\times$SM      \\ \hline
+Bernstein Polynomials          &    6.1$\times$SM      \\ \hline
+\end{tabular}
+\\ \vspace{1em}
+\large
+\textbf{
+Performance 20\% Worse
+\\
+Similar to Adding Extra 65\% Systematic Uncertainty to Account for Arbitrary Background Shape
+}
 \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusions}
+  \begin{itemize}
+    \item Using $H\rightarrow\gamma\gamma$ Background Strategy
+    \item Selected Bernstein Polynomials to Represent Background
+    \item Combined Bias w.r.t. Sum of Exponentials up to $28\%$
+    \item Issues with High Order Bernstein Fit Errors
+    \begin{itemize}
+      \item Can't Use High Orders to Fix Large Combined Bias
+    \end{itemize}
+    \item Expected Limits with Bernsteins 20\% Worse than in PAS
+  \end{itemize}
+\begin{center}
+\tredbf{
+  Large-Bias \& High Order Bernstein Issues \\ Require a New Direction
+}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{New Directions}
+  \begin{enumerate}
+    \item Justify MSSM Function as the only Function Needed
+    \begin{itemize}
+      \item Highest Performance Option
+      \item Either No Systematic or Just Add Systematic to Signal Yield \tred{(Community Doesn't Like Background Systematics Incorporated in Signal Yield)}
+    \end{itemize}
+    \item Use Template-Based Method to Compute Limits
+    \begin{itemize}
+      \item Total Control Over Background Shape Systematic
+      \item May Use MSSM Function w/ Polynomial as Systematic 
+      \item \tred{Must Setup \& Debug New Methodology}
+    \end{itemize}
+    \item Remove Categories from Analysis Until Bias Reasonable
+    \begin{itemize}
+      \item Extremely Quick, No Surprises
+      \item \tred{Severe Performance Loss, up to 45\% Worse than PAS}
+    \end{itemize}
+  \end{enumerate}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -601,43 +661,6 @@ Problems with Large Bias for High-Order Bernstein
 %\\ Other Categories May Have Higher Biases
 \\ Currently Investigating Other Categories \& Wider Fit Range
 }
-\end{center}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Investigating $\Delta N_{sig}$ Estimates with ``Pulls''}
-\begin{columns}[c]
- \column{60mm}
-  \small
-  \begin{itemize}
-    \item Are Fit Errors Calculated Properly?
-    \item ``Pull'' Sometimes too Wide: \\$\Delta N_{sig}$ Under-Estimated
-    \item \tredbf{Causes Bias Over-Estimates}
-    \item \tredbf{May Cause Coverage Problems}
-  \end{itemize}
-  \begin{center}
-    \tiny
-    \begin{tabular}{|l|c|c|c|c|} \hline 
-    \multicolumn{5}{|c|}{\bf 0,1-Jet Tight BB} \\ \hline
-    \bf Order &  \bf 1-5 &\bf  6,7 &\bf  8 &\bf  9 \\ \hline
-    Bernstein $\sigma_{Pull}$ & $\sim0\%$ & $\sim10\%$ & $\sim20\%$ & $\sim30\%$ \\ \hline
-    %\hline
-    %\bf Order & \multicolumn{2}{c|}{\bf 1,2} & \multicolumn{2}{c|}{\bf $\geq3$} \\ \hline
-    %SumExp $\sigma_{Pull}$ & \multicolumn{2}{c|}{$<3\%$} & \multicolumn{2}{c|}{$\geq50\%$} \\ \hline
-    \end{tabular}
-  \end{center}
- \column{60mm}
-    \begin{center}
-      \includegraphics[height=55mm]{redoWholeRange/biasStudy/bias_Jets01PassPtG10BB_115_Z_RefBernstein_Alt6Bernstein.pdf}
-      %\includegraphics[height=55mm]{redoWholeRange/biasStudy/bias_Jets01PassPtG10BO_115_Z_RefBernstein_Alt6Bernstein.pdf}
-    \end{center}
-\end{columns}
-\begin{center}
-  \large
-  \tredbf{
-  For now, Move on, Calculate Performance
-  }
 \end{center}
 \end{frame}
 
