@@ -165,16 +165,17 @@
 
 \begin{frame}
 \frametitle{Background Shape: $\bm{H\rightarrow\gamma\gamma}$ v. $\bm{H\rightarrow\mu\mu$}}
+  \vspace{-1.5em}
   \begin{columns}[c]
    \column{60mm}
       \begin{center}
         $H\rightarrow\mu\mu$ \\
-        \includegraphics[height=55mm]{2013-10-04SystematicBiasStudy1/order_Shape_Jets01PassPtG10BB_SumPow2}
+        \includegraphics[height=50mm]{2013-10-04SystematicBiasStudy1/order_Shape_Jets01PassPtG10BB_SumPow2}
       \end{center}
    \column{60mm}
       \begin{center}
         $H\rightarrow\gamma\gamma$ AN-13-008 \\
-        \includegraphics[height=42mm]{2013-10-04SystematicBiasStudy1/truth_hgg_8TeV_2013moriond_cic0_1Pow}
+        \includegraphics[height=40mm]{2013-10-04SystematicBiasStudy1/truth_hgg_8TeV_2013moriond_cic0_1Pow}
       \end{center}
   \end{columns}
   \begin{center}
@@ -186,6 +187,28 @@
     $H\rightarrow\mu\mu$ has "Change in Curvature" \& Wider Signal Bump
     \\
     $H\rightarrow\mu\mu$ Requires Higher Orders
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bias Dependence on Signal Width}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+Category & Bernstein & Normal Mass Resolution & 50\% Mass Resolution \\
+         & Order     & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
+0,1-Jet Tight BB & 5 & 22\% & 15\% \\ \hline
+0,1-Jet Tight BO & 6 & 9\%  &  5\% \\ \hline
+0,1-Jet Tight BE & 6 & 16\% & 12\% \\ \hline
+    \end{tabular}
+    \\ for $m_H=125\GeVcc{}$
+  \small
+  \\ \vspace{1em}
+  Narrower Signal Peak, Like $H\rightarrow\gamma\gamma$,
+   Leads to Smaller Signal Bias
+  Bernstein ``Wiggles'' Affect Wider $H\rightarrow\mu\mu$ Signal Peak
+  \\ \vspace{1em}
+  \tredbf{$\bm{H\rightarrow\mu\mu}$ More Sensitive to Background Shape Bias than $\bm{H\rightarrow\gamma\gamma}$}
   \end{center}
 \end{frame}
 
@@ -388,6 +411,131 @@ Similar to Adding Extra 65\% Systematic Uncertainty to Account for Arbitrary Bac
 \end{frame}
 
 \begin{frame}
+\frametitle{Bias \& Limits for Reduced Categories}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+           & 7+8 TeV Combined & Combined &          \\
+Categories & Expected Limit   & Bias     & Comments \\ \hline \hline
+PAS Baseline & 5.1$\times$SM  & ??       & Background Bias Not         \\
+                   &           &            & Taken into Account          \\ \hline
+All Categories & 6.1$\times$SM  & 29\%       & Includes Troublesome         \\
+                   &           &            & 6th-Order Bernstein         \\ \hline
+0,1-Jet Pass \& All 2-Jet & 6.2$\times$SM  & 22\%       & Includes Troublesome         \\
+(Not 0,1-Jet Fail) &           &            & 6th-Order Bernstein          \\ \hline
+0,1-Jet Pass BB \& BO & 6.8$\times$SM  & 14\%       & Includes Troublesome         \\
+\& All 2-Jet &           &            & 6th-Order Bernstein          \\ \hline
+0,1-Jet Pass BB & 7.4$\times$SM  & 10\%       & Only $\leq5$-Order         \\
+\& All 2-Jet &           &            &        Bernstein  \\ \hline
+0,1-Jet Pass BB & 8.1$\times$SM  & 7\%       & Only $\leq5$-Order         \\
+\& 2-Jet VBF Tight &           &            & Bernstein         \\ \hline
+    \end{tabular}
+    \\ for $m_H=125\GeVcc{}$
+  \normalsize
+  \\ \vspace{1ex}
+  Quick Option Toward Publication: Reduce Categories
+  \\ With Large Performance Loss
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \Huge
+    Checks Requested at Higgs-Exo Meeting
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bias with 10k Toys}
+  \begin{center}
+  \textbf{Does the Situation Change with 10k Toys \\Instead of 1k Toys?}
+  \\\vspace{1em}
+    \scriptsize
+    \begin{tabular}{|l|c|c|} \hline
+ & \multicolumn{2}{c|}{Bias w.r.t. Sum of Exponentials}   \\ \hline 
+ Category  & 1k Toys  & 10k Toys   \\ \hline \hline
+ Tight BB  &   22\%    &       23\%          \\ \hline         
+ Tight BO  &   15\%    &       16\%         \\ \hline        
+ Tight BE  &   19\%    &       19\%           \\ \hline        
+ Tight OO  &   16\%    &       16\%          \\ \hline        
+ Tight OE  &   7\%     &       9\%      \\ \hline           
+ Tight EE  &   20\%    &       20\%       \\ \hline         
+ GF Pass   &   27\%    &       27\%     \\ \hline         
+ Fail GFVBF&   21\%    &       17\%     \\ \hline         
+    \end{tabular}
+    
+  \small
+   \vspace{1em}
+  \textbf{No, Values within $\sim$3\% of Each Other, as Expected}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bias with 10$\times$More Luminosity}
+  \begin{center}
+  \textbf{Does the Situation Change with 10$\bm{\times}$More Luminosity?}
+  \\ \vspace{2em}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+Category & Bernstein & Normal 8 TeV Lumi & 10$\times$ 8 TeV Lumi \\
+         & Order     & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
+0,1-Jet Tight BB & 5 & 22\% & 66\% \\ \hline
+0,1-Jet Tight BO & 6 & 15\%  & 58\% \\ \hline
+0,1-Jet Tight BE & 6 & 19\% & 52\% \\ \hline
+    \end{tabular}
+    \\ Maximum Bias for $m_H=[120,125,130,135,140,145,150]\GeVcc{}$
+  \small
+  \\ \vspace{1em}
+  \textbf{Bias / Statistical Error Much Larger with More Luminosity, as Expected}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bias Combination with 10$\times$More Luminosity}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|} \hline
+ & Normal 8 TeV Lumi & 10$\times$ 8 TeV Lumi \\
+$m_H$ (\GeVcc{})      & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
+       %115   & -53\%   &    -118\%  \\ \hline
+       120    & 14\%   &     50\%    \\ \hline
+       125    & 17\%   &     33\%    \\ \hline
+       130    & -15\%  &    -50\%    \\ \hline
+       135    & -6\%   &    -26\%    \\ \hline
+       140    & 5\%    &     49\%    \\ \hline
+       145    & 12\%   &     33\%    \\ \hline
+       150    & -8\%   &    -58\%    \\ \hline
+       %155   & 0\%     &     31\%   \\ \hline
+    \end{tabular}
+    \\ Combined Bias of 0,1-Jet Tight BB,BO,BE and 2-Jet GF Tight and Loose 
+  \small
+  \\ \vspace{1em}
+  \textbf{Bias / Statistical Error Much Larger with More Luminosity, as Expected}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example fit for 10$\times$Luminosity: 0,1-Jet Tight BB}
+\vspace{-1em}
+\begin{columns}[c]
+ \column{60mm}
+    \begin{center}
+      Normal Lumi Toy  \\
+      \includegraphics[height=55mm]{oneXeventsToys/debug_SumExp_Jets01PassPtG10BB_8TeV_125_job0_Toy0.png}
+    \end{center}
+ \column{60mm}
+    \begin{center}
+      10$\times$Lumi Toy \\
+      \includegraphics[height=55mm]{tenXeventsToys/debug_SumExp_Jets01PassPtG10BB_8TeV_125_job0_Toy0.png}
+    \end{center}
+\end{columns}
+\begin{center}
+  Fit Similar for $10\times$Luminosity
+\end{center}
+\end{frame}
+
+
+\begin{frame}
 \frametitle{Conclusions}
   \begin{itemize}
     \item Using $H\rightarrow\gamma\gamma$ Background Strategy
@@ -398,6 +546,10 @@ Similar to Adding Extra 65\% Systematic Uncertainty to Account for Arbitrary Bac
       \item Can't Use High Orders to Fix Large Combined Bias
     \end{itemize}
     \item Expected Limits with Bernsteins 20\% Worse than in PAS
+    \item Reducing Categories Quick Option Toward Publication
+    \begin{itemize}
+      \item With Large Performance Loss
+    \end{itemize}
   \end{itemize}
 \begin{center}
 \tredbf{
@@ -1046,139 +1198,6 @@ Category                  & Bias ($\sigma/\sigma_{SM}$) & Uncertainty  ($\sigma/
     \end{tabular}
 \\
   \small
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias \& Limits for Reduced Categories}
-  \begin{center}
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|} \hline
-           & 7+8 TeV Combined & Combined &          \\
-Categories & Expected Limit   & Bias     & Comments \\ \hline \hline
-PAS Baseline & 5.1$\times$SM  & ??       & Background Bias Not         \\
-                   &           &            & Taken into Account          \\ \hline
-All Categories & 6.1$\times$SM  & 29\%       & Includes Troublesome         \\
-                   &           &            & 6th-Order Bernstein         \\ \hline
-0,1-Jet Pass \& All 2-Jet & 6.2$\times$SM  & 22\%       & Includes Troublesome         \\
-(Not 0,1-Jet Fail) &           &            & 6th-Order Bernstein          \\ \hline
-0,1-Jet Pass BB \& BO & 6.8$\times$SM  & 14\%       & Includes Troublesome         \\
-\& All 2-Jet &           &            & 6th-Order Bernstein          \\ \hline
-0,1-Jet Pass BB & 7.4$\times$SM  & 10\%       & Only $\leq5$-Order         \\
-\& All 2-Jet &           &            &        Bernstein  \\ \hline
-0,1-Jet Pass BB & 8.1$\times$SM  & 7\%       & Only $\leq5$-Order         \\
-\& 2-Jet VBF Tight &           &            & Bernstein         \\ \hline
-    \end{tabular}
-    \\ for $m_H=125\GeVcc{}$
-  \small
-  \\ \vspace{1em}
-  Quick Option Toward Publication: Reduce Categories
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Dependance on Signal Width}
-  \begin{center}
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|} \hline
-Category & Bernstein & Normal Mass Resolution & 50\% Mass Resolution \\
-         & Order     & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
-0,1-Jet Tight BB & 5 & 22\% & 15\% \\ \hline
-0,1-Jet Tight BO & 6 & 9\%  &  5\% \\ \hline
-0,1-Jet Tight BE & 6 & 16\% & 12\% \\ \hline
-    \end{tabular}
-    \\ for $m_H=125\GeVcc{}$
-  \small
-  \\ \vspace{1em}
-  Narrower Signal Peak, Like $H\rightarrow\gamma\gamma$,
-   Leads to Smaller Signal Bias
-  Bernstein ``Wiggles'' Affect Wider $H\rightarrow\mu\mu$ Signal Peak
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias with 10$\times$More Luminosity}
-  \begin{center}
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|} \hline
-Category & Bernstein & Normal 8 TeV Lumi & 10$\times$ 8 TeV Lumi \\
-         & Order     & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
-0,1-Jet Tight BB & 5 & 22\% & 66\% \\ \hline
-0,1-Jet Tight BO & 6 & 15\%  & 58\% \\ \hline
-0,1-Jet Tight BE & 6 & 19\% & 52\% \\ \hline
-    \end{tabular}
-    \\ Maximum Bias for $m_H=[120,125,130,135,140,145,150]\GeVcc{}$
-  \small
-  \\ \vspace{1em}
-  Bias / Statistical Error Much Larger with More Luminosity, as Expected
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bias Combination with 10$\times$More Luminosity}
-  \begin{center}
-    \scriptsize
-    \begin{tabular}{|l|c|c|} \hline
- & Normal 8 TeV Lumi & 10$\times$ 8 TeV Lumi \\
-$m_H$ (\GeVcc{})      & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
-       %115   & -53\%   &    -118\%  \\ \hline
-       120    & 14\%   &     50\%    \\ \hline
-       125    & 17\%   &     33\%    \\ \hline
-       130    & -15\%  &    -50\%    \\ \hline
-       135    & -6\%   &    -26\%    \\ \hline
-       140    & 5\%    &     49\%    \\ \hline
-       145    & 12\%   &     33\%    \\ \hline
-       150    & -8\%   &    -58\%    \\ \hline
-       %155   & 0\%     &     31\%   \\ \hline
-    \end{tabular}
-    \\ Combined Bias of 0,1-Jet Tight BB,BO,BE and 2-Jet GF Tight and Loose 
-  \small
-  \\ \vspace{1em}
-  Bias / Statistical Error Much Larger with More Luminosity, as Expected
-  \end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Example fit for 10$\times$Luminosity: 0,1-Jet Tight BB}
-\vspace{-1em}
-\begin{columns}[c]
- \column{60mm}
-    \begin{center}
-      Normal Lumi Toy  \\
-      \includegraphics[height=55mm]{oneXeventsToys/debug_SumExp_Jets01PassPtG10BB_8TeV_125_job0_Toy0.png}
-    \end{center}
- \column{60mm}
-    \begin{center}
-      10$\times$Lumi Toy \\
-      \includegraphics[height=55mm]{tenXeventsToys/debug_SumExp_Jets01PassPtG10BB_8TeV_125_job0_Toy0.png}
-    \end{center}
-\end{columns}
-\begin{center}
-  Fit Similar for $10\times$Liminosity
-\end{center}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Bias with 10k Toys}
-  \begin{center}
-    \scriptsize
-    \begin{tabular}{|l|c|c|} \hline
- & \multicolumn{2}{c|}{Bias w.r.t. Sum of Exponentials}   \\ \hline 
- Category  & 1k Toys  & 10k Toys   \\ \hline \hline
- Tight BB  &   22\%    &       23\%          \\ \hline         
- Tight BO  &   15\%    &       16\%         \\ \hline        
- Tight BE  &   19\%    &       19\%           \\ \hline        
- Tight OO  &   16\%    &       16\%          \\ \hline        
- Tight OE  &   7\%     &       9\%      \\ \hline           
- Tight EE  &   20\%    &       20\%       \\ \hline         
- GF Pass   &   27\%    &       27\%     \\ \hline         
- Fail GFVBF&   21\%    &       17\%     \\ \hline         
-    \end{tabular}
-    
-  \small
-   \vspace{1em}
-  Values within $\sim$3\% of Eachother, as Expected
   \end{center}
 \end{frame}
 
