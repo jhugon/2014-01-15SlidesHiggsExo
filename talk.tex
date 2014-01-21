@@ -534,6 +534,83 @@ $m_H$ (\GeVcc{})      & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \h
 \end{center}
 \end{frame}
 
+\begin{frame}
+  \begin{center}
+    \Huge
+    Limited Fit Range Proposal by Alexei
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Limited Fit Range}
+  \begin{itemize}
+    \item Background Shape Requires too High Order Bernstein \jra Reduce Fit Range
+    \item Investigated this Idea in October
+    \item Combination of $H\rightarrow\gamma\gamma$ \& $Z^\prime$ Strategies
+    \item Choose Widest Fit Window Around $m_H$ with Bias $<14\%$
+    \begin{itemize}
+      \item Results in 4th-Order Bernsteins for All High Stats Categories
+    \end{itemize}
+    \item \tredbf{Expected Limit for 0,1-Jet Tight BB 2$\times$Worse at $\bm{m_H=125\GeVcc{}}$}
+    \item \tred{Issue with Oscillations in Observed Limits v. $m_H$}
+  \end{itemize}
+\begin{center}
+For More Information:
+\tiny
+\\ \vspace{1ex}
+\textcolor{blue}{\url{https://indico.cern.ch/getFile.py/access?contribId=2\&sessionId=8\&resId=0\&materialId=slides\&confId=275462}}
+\\ \vspace{1ex}
+\textcolor{blue}{\url{https://indico.cern.ch/getFile.py/access?contribId=8\&sessionId=5\&resId=0\&materialId=slides\&confId=276037}}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Limited Fit Range Expected Limits}
+\begin{center}
+\begin{tabular}{|l|c|} \hline
+\multicolumn{2}{|c|}{ \bf 0,1-Jet Tight BB Expected Limit for 8 TeV} \\ \hline
+\bf Baseline          &      \bf 13.5   \\ \hline
+Baseline Function         & 17.0        \\
+20\GeVcc{} Fit Window       &         \\ \hline
+2nd Order Bernstein         & 17.9        \\
+20\GeVcc{} Fit Window       &         \\ \hline
+\bf 4th Order Bernstein         & \tredbf{26.3}        \\
+\bf 20$\bm{\GeVcc{}}$ Fit Window       &         \\ \hline
+\end{tabular}
+\\ \vspace{1em}
+\Large \tredbf{
+Factor of 2 Decrease in Performance
+}
+\\
+Included Tons of Shape Systematic Uncertainty
+\\
+Only 25\% of Decrease Due to Reduced Fit Range
+\\
+Remainder Due to Additional Bernstein NDF
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Limited Fit Range Observed Limit Oscillations}
+\begin{columns}[c]
+ \column{55mm}
+    \begin{center}
+      $H\rightarrow\mu\mu$ Toy MC\\
+      \includegraphics[width=50mm]{20GeVFitRange/compareLimits_TightBB_toy1.pdf}
+    \end{center}
+ \column{60mm}
+    \begin{center}
+      $Z^\prime\rightarrow\mu\mu$ PAS\\
+      \includegraphics[width=58mm]{20GeVFitRange/zprime_Moriond13_muon.pdf}
+    \end{center}
+\end{columns}
+\begin{center}
+\bf
+Oscillation Problem More Severe than $\bm{Z^\prime}$
+\\
+Enhanced by Both Narrow Window \& 4th-Order Bernstein
+\end{center}
+\end{frame}
 
 \begin{frame}
 \frametitle{Conclusions}
@@ -549,6 +626,10 @@ $m_H$ (\GeVcc{})      & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \h
     \item Reducing Categories Quick Option Toward Publication
     \begin{itemize}
       \item With Large Performance Loss
+    \end{itemize}
+    \item Investigated Narrowing Fit Range
+    \begin{itemize}
+      \item Large Performance Loss \& Observed Limit Oscillations
     \end{itemize}
   \end{itemize}
 \begin{center}
