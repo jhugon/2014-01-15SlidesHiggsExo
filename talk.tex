@@ -1096,5 +1096,92 @@ Category & Bernstein & Normal Mass Resolution & 50\% Mass Resolution \\
   \end{center}
 \end{frame}
 
+\begin{frame}
+\frametitle{Bias with 10$\times$More Luminosity}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|} \hline
+Category & Bernstein & Normal 8 TeV Lumi & 10$\times$ 8 TeV Lumi \\
+         & Order     & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
+0,1-Jet Tight BB & 5 & 22\% & 66\% \\ \hline
+0,1-Jet Tight BO & 6 & 15\%  & 58\% \\ \hline
+0,1-Jet Tight BE & 6 & 19\% & 52\% \\ \hline
+    \end{tabular}
+    \\ Maximum Bias for $m_H=[120,125,130,135,140,145,150]\GeVcc{}$
+  \small
+  \\ \vspace{1em}
+  Bias / Statistical Error Much Larger with More Luminosity, as Expected
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bias Combination with 10$\times$More Luminosity}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|} \hline
+ & Normal 8 TeV Lumi & 10$\times$ 8 TeV Lumi \\
+$m_H$ (\GeVcc{})      & Bias w.r.t. Sum of Exp. &  Bias w.r.t. Sum of Exp. \\ \hline \hline
+       %115   & -53\%   &    -118\%  \\ \hline
+       120    & 14\%   &     50\%    \\ \hline
+       125    & 17\%   &     33\%    \\ \hline
+       130    & -15\%  &    -50\%    \\ \hline
+       135    & -6\%   &    -26\%    \\ \hline
+       140    & 5\%    &     49\%    \\ \hline
+       145    & 12\%   &     33\%    \\ \hline
+       150    & -8\%   &    -58\%    \\ \hline
+       %155   & 0\%     &     31\%   \\ \hline
+    \end{tabular}
+    \\ Combined Bias of 0,1-Jet Tight BB,BO,BE and 2-Jet GF Tight and Loose 
+  \small
+  \\ \vspace{1em}
+  Bias / Statistical Error Much Larger with More Luminosity, as Expected
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example fit for 10$\times$Luminosity: 0,1-Jet Tight BB}
+\vspace{-1em}
+\begin{columns}[c]
+ \column{60mm}
+    \begin{center}
+      Normal Lumi Toy  \\
+      \includegraphics[height=55mm]{oneXeventsToys/debug_SumExp_Jets01PassPtG10BB_8TeV_125_job0_Toy0.png}
+    \end{center}
+ \column{60mm}
+    \begin{center}
+      10$\times$Lumi Toy \\
+      \includegraphics[height=55mm]{tenXeventsToys/debug_SumExp_Jets01PassPtG10BB_8TeV_125_job0_Toy0.png}
+    \end{center}
+\end{columns}
+\begin{center}
+  Fit Similar for $10\times$Liminosity
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Bias with 10k Toys}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|l|c|c|} \hline
+ & \multicolumn{2}{c|}{Bias w.r.t. Sum of Exponentials}   \\ \hline 
+ Category  & 1k Toys  & 10k Toys   \\ \hline \hline
+ Tight BB  &   22\%    &       23\%          \\ \hline         
+ Tight BO  &   15\%    &       16\%         \\ \hline        
+ Tight BE  &   19\%    &       19\%           \\ \hline        
+ Tight OO  &   16\%    &       16\%          \\ \hline        
+ Tight OE  &   7\%     &       9\%      \\ \hline           
+ Tight EE  &   20\%    &       20\%       \\ \hline         
+ GF Pass   &   27\%    &       27\%     \\ \hline         
+ Fail GFVBF&   21\%    &       17\%     \\ \hline         
+    \end{tabular}
+    
+  \small
+   \vspace{1em}
+  Values within $\sim$3\% of Eachother, as Expected
+  \end{center}
+\end{frame}
+
+
 
 \end{document}
